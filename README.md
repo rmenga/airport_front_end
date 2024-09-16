@@ -1,5 +1,25 @@
-# Vue 3 + Vite
+🔍O Airport Front-End é uma aplicação desenvolvida para proporcionar uma interface intuitiva e eficiente que permite aos usuários gerenciar e visualizar informações essenciais de um aeroporto.
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+⚙️Funcionalidades:
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+No sistema deve ser possível cadastrar vôo: </p>
+<p>a. Código do vôo (Random code)</p>
+<p>b. Origem (CEP, País, Cidade e Estado)</p>
+<p>c. Destino (CEP, País, Cidade e Estado)</p>
+<p>d. Data (Dia, Mês, Ano e Hora)</p>
+<p>2. Cada voo deve ter no mínimo 30 minutos de diferença do outro</p>
+<p>3. Não podem haver 2 voos para o mesmo destino no mesmo dia</p>
+
+
+🚀 Tecnologias Utilizadas:
+     <p> Vuejs + vite. </p>
+
+📦 Instalação
+<p>Para rodar o projeto localmente, siga os seguintes passos: </p>
+<p> Clone o repositório: git clone https://github.com/rmenga/airport_front_end.git </p>
+
+<p> Navegue até o diretório do projeto: cd airport_front_end </p>
+
+<p>Instale as dependências: npm install</p>
+
+<p> Inicie o servidor de desenvolvimento: npm run dev </p>
