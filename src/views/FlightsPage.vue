@@ -45,14 +45,12 @@ const flightFields = [
   { name: 'time', label: 'Hora', placeholder: 'Hora', type: 'time' }
 ];
 
-// Abre o modal de cadastro de voo, resetando o formulário
 const openAddFlightModal = () => {
   newFlight.value = { sourceId: '', destinyId: '', date: '', time: '' }; // Reseta o formulário
   isEditing.value = false;
   showAddFlightModal.value = true;
 };
 
-// Função para editar um voo
 const editFlight = (flight) => {
   newFlight.value = {
     sourceId: flight.source_id,
@@ -65,7 +63,6 @@ const editFlight = (flight) => {
   showAddFlightModal.value = true; // Certifique-se de que o modal é aberto
 };
 
-// Função que lida com a submissão do formulário, diferenciando entre adicionar ou editar voo
 const handleSubmitFlight = () => {
   const { date, time } = newFlight.value;
   const dateTime = `${date}T${time}`;
@@ -84,7 +81,6 @@ const handleSubmitFlight = () => {
   }
 };
 
-// Função para adicionar um voo
 const addFlight = async (flight) => {
   try {
     await axios.post('http://localhost:3000/flights', {
@@ -100,7 +96,6 @@ const addFlight = async (flight) => {
   }
 };
 
-// Função para atualizar um voo
 const updateFlight = async (flight) => {
   try {
     await axios.put(`http://localhost:3000/flights/${editingFlightId.value}`, flight);
@@ -112,7 +107,6 @@ const updateFlight = async (flight) => {
   }
 };
 
-// Função para listar os voos
 const listFlights = async () => {
   try {
     const response = await axios.get('http://localhost:3000/flights');
@@ -127,7 +121,6 @@ const listFlights = async () => {
   }
 };
 
-// Carrega as opções de origem e destino
 const fetchLocations = async () => {
   try {
     const response = await axios.get('http://localhost:3000/locations');
@@ -145,13 +138,11 @@ const fetchLocations = async () => {
   }
 };
 
-// Fecha o modal de voo
 const closeFlightModal = () => {
   showAddFlightModal.value = false;
   errorMessage.value = '';
 };
 
-// Monta o componente, carregando as localizações e os voos
 onMounted(() => {
   fetchLocations();
   listFlights();
