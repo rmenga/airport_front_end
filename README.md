@@ -2,23 +2,24 @@
 
 ⚙️Funcionalidades:
 
-No sistema deve ser possível cadastrar vôo: 
-a. Código do vôo (Random code)
-b. Origem (CEP, País, Cidade e Estado)
-c. Destino (CEP, País, Cidade e Estado)
-d. Data (Dia, Mês, Ano e Hora)
-2. Cada voo deve ter no mínimo 30 minutos de diferença do outro
-3. Não podem haver 2 voos para o mesmo destino no mesmo dia
+No sistema deve ser possível cadastrar vôo: </p>
+<p>a. Código do vôo (Random code)</p>
+<p>b. Origem (CEP, País, Cidade e Estado)</p>
+<p>c. Destino (CEP, País, Cidade e Estado)</p>
+<p>d. Data (Dia, Mês, Ano e Hora)</p>
+<p>2. Cada voo deve ter no mínimo 30 minutos de diferença do outro</p>
+<p>3. Não podem haver 2 voos para o mesmo destino no mesmo dia</p>
+
 
 🚀 Tecnologias Utilizadas:
-      Vuejs + vite.
+     <p> Vuejs + vite. </p>
 
 📦 Instalação
-Para rodar o projeto localmente, siga os seguintes passos:
-Clone o repositório: git clone https://github.com/rmenga/airport_front_end.git
+<p>Para rodar o projeto localmente, siga os seguintes passos: </p>
+<p> Clone o repositório: git clone https://github.com/rmenga/airport_front_end.git </p>
 
-Navegue até o diretório do projeto: cd airport_front_end
+<p> Navegue até o diretório do projeto: cd airport_front_end </p>
 
-Instale as dependências: npm install
+<p>Instale as dependências: npm install</p>
 
-Inicie o servidor de desenvolvimento: npm run dev
+<p> Inicie o servidor de desenvolvimento: npm run dev </p>
